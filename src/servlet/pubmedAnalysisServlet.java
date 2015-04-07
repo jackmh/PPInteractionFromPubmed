@@ -41,14 +41,15 @@ public class pubmedAnalysisServlet extends HttpServlet {
 		{
 			query = query.trim();
 		}
-		String title = "<h1>跳转成功！</h1>";
 	      String docType =
 	      "<!doctype html public \"-//w3c//dtd html 4.0 " +
 	      "transitional//en\">\n";
 	      out.println(docType +
 	                "<html>\n" +
 	                "<body bgcolor=\"#f0f0f0\">\n" +
-	                query + "\n" +
+	                getPubmedData(query, "<ID>", "</ID>") +
+	                "<br>" +
+	                getPubmedData(query, "<TEXT>", "</TEXT>") +
 	                "</body></html>");
 		out.flush();
 		out.close();
@@ -62,6 +63,15 @@ public class pubmedAnalysisServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
+	
+	private String getPubmedData(String pubmedText, String splitBegin, String splitEnd)
+	{
+		String pubmedDataStr = "";
+		int beginIndex = pubmedText.indexOf(splitBegin);
+		int endIndex = pubmedText.indexOf(splitEnd);
+		pubmedDataStr = pubmedText.substring(beginIndex, endIndex);
+		return pubmedDataStr.trim();
 	}
 
 }
