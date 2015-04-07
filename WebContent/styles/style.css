@@ -1,0 +1,174 @@
+body, form, #fm {
+	position: relative;
+}
+
+html {
+	height: 100%;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+body {
+	font: 12px arial;
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#main {
+	width: 90%;
+	margin: auto;
+}
+
+hr {
+	color: yellow;
+}
+
+#header {
+	padding: 1% 0px 0px; /*上右下左*/
+	text-align: center;
+	color: #127ea1;
+	font-family: Georgia;
+	background: url(../images/bg.gif) no-repeat;
+	background-repeat: repeat-x;
+	/*border: red solid thin; */
+}
+
+h1 {
+	font: 300px;
+}
+
+#navigation {
+	text-align: center;
+	font-family: Serif, Georgia, "Times New Roman";
+	word-spacing: 20px;
+}
+
+ul {
+	list-style-type: none;
+	font: 50px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+a:link, a:visited {
+	display: block;
+	width: 60px;
+	color: #FFFFFF;
+	background-color: #bebebe;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	background-color: #cc0000;
+}
+
+hr {
+	margin: 1px 0px;
+}
+
+#pageBody {
+	overflow: hidden;
+}
+
+#inputLabel, #inputSample {
+	width: 50%;
+	height: 25%;
+	position: relative;
+	text-align: center;
+}
+
+.post .byline {
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: #BFC9AE solid 1px;
+	color: #5E5E5E;
+}
+
+i {
+	font-style: italic;
+}
+
+i a {
+	color: #006;
+	border-bottom: 1px dotted #add8e6;
+}
+
+i a:hover {
+	padding: 0 2px;
+	text-decoration: none;
+	color: #ffff00;
+	background-color: #af1a1a;
+	border-bottom: 1px dotted #006;
+}
+
+div.formOfInput {
+	position: relative;
+	margin: 20px 0px;
+	width: 60em;
+	height: 16em;
+	border: 1px solid red;
+}
+
+textarea {
+	width: 50%;
+	height: 25%;
+}
+
+textarea[Attributes Style] {
+	white-space: pre;
+	word-wrap: normal;
+}
+
+textarea {
+	font-family: monospace;
+	border-color: rgb(169, 169, 169);
+}
+
+textarea {
+	-webkit-appearance: textarea;
+	background-color: white;
+	border: 1px solid;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	flex-direction: column;
+	resize: auto;
+	cursor: auto;
+	padding: 2px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+#content {
+	float: left;
+	padding: 5px;
+	min-height: 300px;
+}
+
+#footer {
+	clear: both;
+	height: 50px;
+	text-align: center;
+	background: url(../images/foot.gif);
+}
+
+.foot_text {
+	color: #FFFFFF;
+	text-align: center;
+	padding: 20px 0px;
+}
