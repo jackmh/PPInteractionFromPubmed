@@ -1,5 +1,6 @@
 body, form, #fm {
 	position: relative;
+	font-style: italic;
 }
 
 html {
@@ -18,7 +19,7 @@ body {
 	list-style: none;
 }
 
-#main {
+#main, #analysisContents {
 	width: 90%;
 	margin: auto;
 }
@@ -95,10 +96,6 @@ hr {
 	color: #5E5E5E;
 }
 
-i {
-	font-style: italic;
-}
-
 i a {
 	color: #006;
 	border-bottom: 1px dotted #add8e6;
@@ -119,6 +116,29 @@ div.formOfInput {
 	height: 16em;
 	border: 1px solid red;
 }
+
+div.pubmedID, p.pubmedNERText {
+	border-bottom: 1px dotted blue;
+	padding: 2px 0px;
+}
+
+div.pubmedID {
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+
+p.pubmedNERText {
+	font-size: 15px;
+	line-hight: 3em;
+	font-family: Serif, Georgia, "Times New Roman";
+}
+
+
+GENE {
+	margin-bottom: 2px;
+	border: 1px solid red;
+}
+
 
 textarea {
 	width: 50%;
